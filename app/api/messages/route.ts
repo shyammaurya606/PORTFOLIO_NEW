@@ -5,6 +5,8 @@ import { messageSchema, contactFormSchema } from '@/lib/validations';
 import { authOptions } from '@/lib/auth';
 import { isRateLimited, getRateLimitInfo } from '@/lib/rate-limit';
 import { sendEmail } from '@/lib/email';
+import { z } from 'zod'; // ✅ FIX added here
+
 
 export async function GET(request: NextRequest) {
   try {
