@@ -1,3 +1,7 @@
 [build.environment]
   NODE_VERSION = "18"
   NPM_VERSION = "9"
+
+[build]
+command = "npm run build"
+publish = "out" # or "dist", "build", depending on framework
